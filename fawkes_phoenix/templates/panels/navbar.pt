@@ -56,14 +56,6 @@
       <!-- nav on right side -->
 
       <ul class="nav navbar-nav navbar-right">
-        <div tal:repeat="item subitems" class="nav navbar-nav">
-          <!-- subitem -->
-          <li tal:condition="'items' not in item" class="${'active' if item['active'] else ''}">
-            <a class="navbar-link btn-lg" href="${item.url}" data-toggle="tooltip" title="${item.name}">
-              <span class="${item.icon}"></span>
-            </a>
-          </li>
-        </div>
         <!-- sign-in -->
         <li tal:condition="not request.user">
           <div class="col-sm-12">
