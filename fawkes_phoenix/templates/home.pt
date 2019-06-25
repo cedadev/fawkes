@@ -5,7 +5,7 @@
     <section class="topbox">
       <div class="container">
         <h1>
-          <span class="title">Fawkes</span>
+          <span class="title">NAME Service</span>
         </h1>
         <h2>
           A <strong>Phoenix</strong> Web Application to run<br>
@@ -19,7 +19,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2><strong>Explore Fawkes</strong></h2>
+            <h2><strong>Explore the NAME Service</strong></h2>
             <h3>Making it easy to run NAME and to visualize and share the results.</h3>
             <h3></h3>
           </div>
