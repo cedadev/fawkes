@@ -49,7 +49,7 @@
         <!-- sign-in -->
         <li tal:condition="not request.user">
           <div class="col-sm-12">
-            <a href="${request.route_path('sign_in')}" class="btn btn-link navbar-btn">Sign In</a>
+            <a href="${request.route_path('account_auth', provider='ceda_oauth')}" class="btn btn-link navbar-btn">Sign In</a>
           </div>
         </li>
         <!-- user -->
