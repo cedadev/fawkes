@@ -30,13 +30,8 @@
             Help<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li>
-              <a href="${request.route_url('readthedocs', part='index')}" target="_">
+              <a href="https://help.ceda.ac.uk/article/4734-name-service" target="_">
                 <i class="fa fa-book"></i> User Documentation
-              </a>
-            </li>
-            <li>
-              <a href="${request.route_url('readthedocs', part='tutorial')}" target="_">
-                <i class="fa fa-medkit"></i> Tutorial
               </a>
             </li>
           </ul>
