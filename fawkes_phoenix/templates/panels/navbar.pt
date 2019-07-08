@@ -1,0 +1,77 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">NAME</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <!-- nav with text -->
+      <ul class="nav navbar-nav">
+        <div tal:repeat="item items" class="nav navbar-nav">
+          <li class="${'active' if item.active else ''}">
+            <a class="navbar-link" href="${item.url}">
+              ${item.name}
+              <span tal:condition="item.active" class="sr-only">(current)</span>
+            </a>
+          <li>
+        </div>
+      </ul>
+
+      <!-- static links -->
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle nav-user-dropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+            Help<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="https://help.ceda.ac.uk/article/4734-name-service" target="_">
+                <i class="fa fa-book"></i> User Documentation
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- nav on right side -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- sign-in -->
+        <li tal:condition="not request.user">
+          <div class="col-sm-12">
+            <a href="${request.route_path('account_auth', provider='ceda_oauth')}" class="btn btn-link navbar-btn">Sign In</a>
+          </div>
+        </li>
+        <!-- user -->
+        <li tal:condition="request.user" class="dropdown">
+          <a href="#" class="dropdown-toggle nav-user-dropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+            <span class="fa fa-user-circle-o fa-lg"></span> ${request.user.get('name', 'Guest')} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="${request.route_path('profile', userid=request.unauthenticated_userid, tab='profile')}"><i class="fa fa-user fa-lg p-r-xs"></i> My Profile</a>
+            </li>
+            <li tal:condition="request.has_permission('edit')">
+              <a href="${request.route_path('cart')}"><i class="fa fa-shopping-cart fa-lg p-r-xs"></i> Cart</a>
+            </li>
+            <li tal:condition="request.has_permission('admin')" role="separator" class="divider"></li>
+            <li tal:condition="request.has_permission('admin')">
+              <a href="${request.route_path('people')}"><i class="fa fa-users fa-lg p-r-xs"></i> People</a>
+            </li>
+            <li tal:condition="request.has_permission('admin')">
+              <a href="${request.route_path('settings')}"><i class="fa fa-wrench fa-lg p-r-xs"></i> Settings</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a href="/account/logout"><i class="fa fa-sign-out fa-lg p-r-xs"></i> Sign Out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

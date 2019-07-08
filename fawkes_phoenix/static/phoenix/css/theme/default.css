@@ -1,0 +1,140 @@
+/* Basics
+----------------------- */
+body {
+  /* background: white; */
+  /* padding-top: 50px; */
+}
+/* Header
+----------------------- */
+/*.navbar {
+  margin-bottom: 0;
+}*/
+/*
+.navbar-default {
+  border-radius: 0;
+}
+.navbar-brand {
+  height: 40px;
+  margin-right: 15px;
+  width: 120px;
+}*/
+/* Breadcrumbs
+----------------------- */
+/* .breadcrumbs {
+    background: white;
+} */
+
+/* Flash messages
+----------------------- */
+.flash-messages {
+  margin-top: -20px;
+}
+
+/* Home
+----------------------- */
+.jumbotron {
+  background-color: #8AB219;
+  background-image: url('/static/phoenix/img/pyramid-green.png');
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  background-size: 800px;
+  color: white;
+  padding: 40px 0 60px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  margin-top: -20px;
+}
+.jumbotron a {
+    color: orange
+}
+
+/* Top Box
+----------------------- */
+.topbox {
+    background-color: #2e2e2e;
+    background-image: url('/static/phoenix/img/pyramid-MOgreen.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 500px;
+    color: white;
+    padding: 20px 0 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-top: -20px;
+}
+.topbox a {
+    color: orange
+}
+
+.topbox .title{
+    font-size: larger;
+    color : #afd734;
+}
+
+/* Logos
+---------------------- */
+
+.logos-grey {
+    background-color: #2e2e2e;
+    border-bottom: #afd734 1px solid;
+}
+
+.logos-white {
+    background-color: white;
+    padding: 10px 5px 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Info Box
+----------------------- */
+.infobox {
+    text-align: center;
+    background: #c5c997;
+    padding: 20px;
+}
+
+
+/* Birdhouse Box
+----------------------- */
+.birdhouse {
+    background: #2e2e2e;
+    color: white;
+}
+.birdhouse a {
+    color: #c5c997;
+}
+
+/* Footer
+----------------------- */
+.footer {
+  text-align: center;
+  background: white;
+  border-top: 1px solid;
+  padding: 20px;
+}
+.footer a {
+    color: orange
+}
+
+/* Media
+---------------------- */
+/*.thumbnail > img {
+    height: 32px;
+}*/
+
+/* Log Panel
+---------------------- */
+pre.log-output {
+    color:#f1f1f1;
+    background-color:#222;
+}
+
+/* XML Panel
+---------------------- */
+pre.xml-output {
+    color:#f1f1f1;
+    background-color:#222;
+}
