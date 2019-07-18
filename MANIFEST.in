@@ -1,2 +1,1 @@
-recursive-include fawkes_phoenix/static *
-recursive-include fawkes_phoenix/templates *
+recursive-include fawkes_phoenix *
