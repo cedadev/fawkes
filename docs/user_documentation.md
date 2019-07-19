@@ -11,35 +11,35 @@ To get started [login](#signing-in) with your ceda account.
 Once logged in go to [Processes](#the-processes) and select **NAME**.  
 Select one of the three processes:  
 * [Run NAME](#run-name)  
-* [Run NAME with Presets](#run-name-with-presets)  
+* [Run NAME for defined locations](#run-name-for-defined-locations)  
 * [Plot NAME results](#plot-name-results)  
 
 Enter your inputs and submit the job.
 Go to the [Monitor](#monitoring-your-jobs) tab to view the progress of your job.  
-Here you can see the Job Log and Outputs of your jobs. The outputs will vary depending on the job that was run.  
+Here you can see the Outputs of your jobs. The outputs will vary depending on the job that was run.  
 
 ## Signing in
 
 To sign in click "Sign in".  
-[button]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 If you are not already signed into a CEDA account you will be asked to log in:  
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 Once logged in you will be asked to let NAME WPS read your CEDA profile. Click Allow:  
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 You should now be signed in with your ceda username. This lets you come back and see your completed jobs.  
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 
 ## The Processes
 
 To run a process, click on [Processes](https://name.ceda.ac.uk/processes).  
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 Select [**NAME**](https://name.ceda.ac.uk/processes/list?wps=name).  
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 Then select one of the following three processes:  
 
 ### Run NAME
 
-[pic]  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 [**Run NAME**](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name) runs NAME with the user providing all inputs, including location of release and bounding box.  
 You must title the run something unique to refer to the job.  
 
@@ -47,24 +47,45 @@ You must title the run something unique to refer to the job.
 
 | Name | Description | Type | Default | Required | Example Value |
 |------------|---------------------------|---------|-------------|----------|-----------------------|
-|[Title](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField2)| Unique name that will identify your job later. Note that spaces will be converted to underscored. | String | None | Yes | [pic] |
-|[Longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField3)| The longitude of the location of release in decimal degrees. Longitude cannot exceed +/-180. | Float | -24.867222 | Yes | [pic] |
-|[Latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| The latitude of the location of release in decimal degrees. Latitude cannot exceed +/-90. | Float | 16.863611 | Yes | [pic] |
-|[Elevation](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| Dictates the elevation of the release in metres above ground level. | Integer | 10 | Yes | [pic] |
-|[Run Backwards](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField6)| Whether NAME will run backwards from the time selected or not. | Boolean | True | Yes | [pic] |
-|[Time to run model over](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField7)| How long the model will be run over in selected units. Note that the maximum run length is 20 days. | Integer | 1 | Yes | [pic] |
-|[Time to run model over (units)](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField8)| Units to use for *Time to run model over*. Either **days** or **hours**. | String | days | Yes | [pic] |
-|[Computational Domain](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField9)| Bounding box in which NAME will calculate the dispersion within. Enter the minimum and maximum longitude (X) and latitude (Y) values. | BoundingBox | [180, -90, 180, 90] | Yes | [pic] |
+|[Run async](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField2)| Whether to run the process asynchronously. | Boolean | True | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Title](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField3)| Unique name that will identify your job later. Note that spaces will be converted to underscored. | String | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| The longitude of the location of release in decimal degrees. Longitude cannot exceed +/-180. | Float | -24.867222 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| The latitude of the location of release in decimal degrees. Latitude cannot exceed +/-90. | Float | 16.863611 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Elevation](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField6)| Dictates the elevation of the release in metres above ground level. | Integer | 10 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Run Backwards](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField7)| Whether NAME will run backwards from the time selected or not. | Boolean | True | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Time to run model over](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField8)| How long the model will be run over in selected units. Note that the maximum run length is 20 days. | Integer | 1 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Time to run model over (units)](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField9)| Units to use for *Time to run model over*. Either **days** or **hours**. | String | days | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField10)| The minimum longitude that makes up the Bounding Box in which the plot will be generated. | Float | -180 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Maximum longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField11)| The maximum longitude that makes up the Bounding Box in which the plot will be generated. | Float | 180 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField12)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | -90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField13)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | 90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Output elevation averaging range(s)](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField14)| The output elevation ranges you which to calculate the particle dispersion within. Multiple values can be added by continuing to click on the blue link. Note that values entered here must be two numbers separated by a dash. | List | [0-100] | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Resolution](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField16)| The resolution to run NAME within. The options are 0.05 or 0.25 degrees. Note that we don't recommend using 0.05 degrees for runs longer than 5 days. | Float | 0.25 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Run Type](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField17)| How often you want the simulated particles released each day, either daily (i.e. once) or 3-hourly (8 times). | String | 3-hourly | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Daily run time (UTC)](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField18)| If you selected "daily" run time above, you can then choose at what time you want the particles released. | Time | 12:00 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Daily release length](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField19)| If you selected "daily" run time above, you can then choose how long you want your releases to last in hours from a selection (1, 3, 6, 12 or 24). | Int | 1 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Start date](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField20)| Start date that you'd like NAME to run within. Note, this time is inclusive and as with all NAME time parameters is considered within the Coordinated Universal Time (UTC) and not any local timezone. | Date | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[End date](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField21)| End date that you'd like NAME to run within. Note, this time is inclusive and as with all NAME time parameters is considered within the Coordinated Universal Time (UTC) and not any local timezone. | Date | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 
 #### Outputs
 
 Explanation here
 
-### Run NAME with Presets
+### Run NAME for defined locations
 
 #### Inputs
 
-Walkthrough here
+| Name | Description | Type | Default | Required | Example Value |
+|------------|---------------------------|---------|-------------|----------|-----------------------|
+|[Run async](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField2)| Whether to run the process asynchronously. | Boolean | True | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Release Station](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField3)| Release location defines the latitude, longitude and elevation of the particle release, as well as the computational domain. | String | Cape Verde | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Run Backwards](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| Whether NAME will run backwards from the time selected or not. | Boolean | True | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Run time](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| How long the model will be run over in days. Note that the maximum run length is 20 days. | Integer | 1 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Output elevation averaging range(s)](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField6)| The output elevation ranges you which to calculate the particle dispersion within. Multiple values can be added by continuing to click on the blue link. Note that values entered here must be two numbers separated by a dash. | List | [0-100] | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Resolution](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField8)| The resolution to run NAME within. The options are 0.05 or 0.25 degrees. Note that we don't recommend using 0.05 degrees for runs longer than 5 days. | Float | 0.25 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Start date](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField9)| Start date that you'd like NAME to run within. Note, this time is inclusive and as with all NAME time parameters is considered within the Coordinated Universal Time (UTC) and not any local timezone. | Date | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[End date](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField10)| End date that you'd like NAME to run within. Note, this time is inclusive and as with all NAME time parameters is considered within the Coordinated Universal Time (UTC) and not any local timezone. | Date | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+
 
 #### Outputs
 
@@ -74,7 +95,20 @@ Explanation here
 
 #### Inputs
 
-Walkthrough here
+| Name | Description | Type | Default | Required | Example Value |
+|------------|---------------------------|---------|-------------|----------|-----------------------|
+|[Run async](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField2)| Whether to run the process asynchronously. | Boolean | True | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[NAME run ID ](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField3)| The only required parameter to generate plots is the NAME run ID. This must be an ID that was generated by the NAME WPS from a previous run. To find the run ID, navigate to the [Monitor](https://name.ceda.ac.uk/monitor) tab and find the run you wish to plot an copy it's Run ID. For more details: [Monitor](#monitoring-your-jobs). | String | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Summarise data](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| This will add the particle concentration values for each day, week or month. The all option summarises all the data within this NAME run into a single plot. | String | NA | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Plot specific date and time](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| Instead of summarising the data, you could select one particular time-point to plot by entering a date and time into the following field. Note that if anything is entered into this box any summary selection will be ignored. | DateTime | None | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Mark release location](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField6)| Mark the release site onto the plots with a cross. | Boolean | False | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Projection](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField7)| Change the projection from the default of cyl, to either npstere or spstere. | String | cyl | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField8)| The minimum longitude that makes up the Bounding Box in which the plot will be generated. | Float | -180 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Maximum longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField9)| The maximum longitude that makes up the Bounding Box in which the plot will be generated. | Float | 180 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField10)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | -90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField11)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | 90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Particle concentration scale](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField12)| The scale of the particle concentration can be changed by entering a minimum and maximum value. If left empty each plot will autoscale based on the containing data. | String | None | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Colour map](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField13)| The colour scheme used can be changed from coolwarm to either viridis or rainbow. Note we do not recommend using rainbow as it is not colour-blind friendly. | String | coolwarm | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 
 #### Outputs
 
@@ -82,11 +116,18 @@ Explanation here
 
 ## Monitoring your jobs
 
-How to monitor job
-
-Go to the [Monitor](https://name.ceda.ac.uk/monitor) tab to view the progress of your job.  
-Click on Details to see the Job Log and Outputs of your job. The outputs will vary depending on the job that was run.  
+Go to the [Monitor](https://name.ceda.ac.uk/monitor) tab to view the progress of your jobs.  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Click on the green refresh icon to check the status of the job.  
+Click on Details to see a running log of the job process.  
+Here there is:  
+A *Job Log*: a log of how the job is currently doing.  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+*Inputs*:  a list of all the inputs you provided.  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+*Outputs*: the ouputs of the job which will vary depending on the process run.  
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+*View as XML*: A way to view the WPS XML response of your job. Most users will not use this view. 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
 
 ## Further Information
-
-Further info here
