@@ -7,7 +7,7 @@ This site offers a Web Processing Service for users to be able to run [NAME on J
 
 ## Quick start
 
-To get started [login](#signing-in) with your ceda account.  
+To get started [login](#signing-in) with your CEDA account.  
 Once logged in go to [Processes](#the-processes) and select **NAME**.  
 Select one of the three processes:  
 * [Run NAME](#run-name)  
@@ -16,7 +16,7 @@ Select one of the three processes:
 
 Enter your inputs and submit the job.
 Go to the [Monitor](#monitoring-your-jobs) tab to view the progress of your job.  
-Here you can see the Outputs of your jobs. The outputs will vary depending on the job that was run.  
+Here you can see the outputs of your jobs. The outputs will vary depending on the job that was run.  
 
 ## Signing in
 
@@ -26,7 +26,7 @@ If you are not already signed into a CEDA account you will be asked to log in:
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 Once logged in you will be asked to let NAME WPS read your CEDA profile. Click Allow:  
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
-You should now be signed in with your ceda username. This lets you come back and see your completed jobs.  
+You should now be signed in with your CEDA username. This lets you come back and see your completed jobs.  
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
 
 ## The Processes
@@ -69,9 +69,16 @@ You must title the run something unique to refer to the job.
 
 #### Outputs
 
-Explanation here
+| Name | Description | Type | Example |
+|------------|-------------------------------------|---------|-------------------------|
+|[Run ID](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Unique ID used to fidn this job later. This can be used as an input to plot a jon with the [Plot NAME results](#plot-name-results) process. | String | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Output files (zipped)](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Zip folder containing the raw NAME data output and the summary plot. | File | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Summary Plot](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Generated plot from NAME run that summarises all data into one plot. | File | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 
 ### Run NAME for defined locations
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+[**Run NAME for defined locations**](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name_preset) runs NAME from a choice of predefined standard releases. These will set for you the release location, bounding box and elevation.  
 
 #### Inputs
 
@@ -89,9 +96,16 @@ Explanation here
 
 #### Outputs
 
-Explanation here
+| Name | Description | Type | Example |
+|------------|-------------------------------------|---------|-------------------------|
+|[Run ID](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Unique ID used to fidn this job later. This can be used as an input to plot a jon with the [Plot NAME results](#plot-name-results) process. | String | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Output files (zipped)](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Zip folder containing the raw NAME data output and the summary plot. | File | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Summary Plot](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| Generated plot from NAME run that summarises all data into one plot. | File | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 
 ### Plot NAME Results
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+[**Plot NAME Results**](https://name.ceda.ac.uk/processes/execute?wps=name&process=plot_name) Takes the outputs of another NAME run and then plots the results with user defined parameters.  
 
 #### Inputs
 
@@ -112,7 +126,10 @@ Explanation here
 
 #### Outputs
 
-Explanation here
+| Name | Description | Type | Example |
+|------------|-------------------------------------|---------|-------------------------|
+|[Plot file(s)](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| File or files generated from plotting NAME output data. | Files | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+
 
 ## Monitoring your jobs
 
