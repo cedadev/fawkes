@@ -34,7 +34,7 @@ You should now be signed in with your CEDA username. This lets you come back and
 To run a process, click on [Processes](https://name.ceda.ac.uk/processes).  
 ![alt text](img/processes.png "View processes")  
 Select [**NAME**](https://name.ceda.ac.uk/processes/list?wps=name).  
-![alt text](img/name.png "NAME Process")  
+![alt text](img/NAME.png "NAME Process")  
 Then select one of the following three processes:  
 
 ### Run NAME
