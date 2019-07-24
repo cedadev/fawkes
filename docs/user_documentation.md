@@ -21,25 +21,25 @@ Here you can see the outputs of your jobs. The outputs will vary depending on th
 ## Signing in
 
 To sign in click "Sign in".  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/sign_in.png "Sign in button")  
 If you are not already signed into a CEDA account you will be asked to log in:  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/ceda.png "Log in with CEDA")  
 Once logged in you will be asked to let NAME WPS read your CEDA profile. Click Allow:  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/allow.png "Allow NAMEWPS")  
 You should now be signed in with your CEDA username. This lets you come back and see your completed jobs.  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/logged_in.png "Logged in")  
 
 ## The Processes
 
 To run a process, click on [Processes](https://name.ceda.ac.uk/processes).  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/processes.png "View processes")  
 Select [**NAME**](https://name.ceda.ac.uk/processes/list?wps=name).  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/name.png "NAME Process")  
 Then select one of the following three processes:  
 
 ### Run NAME
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/run_name.png "Run NAME")  
 [**Run NAME**](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name) runs NAME with the user providing all inputs, including location of release and bounding box.  
 You must title the run something unique to refer to the job.  
 
@@ -49,8 +49,8 @@ You must title the run something unique to refer to the job.
 |------------|---------------------------|---------|-------------|----------|-----------------------|
 |[Run async](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField2)| Whether to run the process asynchronously. | Boolean | True | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Title](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField3)| Unique name that will identify your job later. Note that spaces will be converted to underscored. | String | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
-|[Longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| The longitude of the location of release in decimal degrees. Longitude cannot exceed +/-180. | Float | -24.867222 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
-|[Latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| The latitude of the location of release in decimal degrees. Latitude cannot exceed +/-90. | Float | 16.863611 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Longitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField4)| The longitude of the location of release in decimal degrees. Longitude cannot exceed +/-180. | Float | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField5)| The latitude of the location of release in decimal degrees. Latitude cannot exceed +/-90. | Float | None | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Elevation](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField6)| Dictates the elevation of the release in metres above ground level. | Integer | 10 | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Run Backwards](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField7)| Whether NAME will run backwards from the time selected or not. | Boolean | True | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Time to run model over](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField8)| How long the model will be run over in selected units. Note that the maximum run length is 20 days. | Integer | 1 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
@@ -77,7 +77,7 @@ You must title the run something unique to refer to the job.
 
 ### Run NAME for defined locations
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/run_name_preset.png "Run NAME for defined locations")  
 [**Run NAME for defined locations**](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name_preset) runs NAME from a choice of predefined standard releases. These will set for you the release location, bounding box and elevation.  
 
 #### Inputs
@@ -104,7 +104,7 @@ You must title the run something unique to refer to the job.
 
 ### Plot NAME Results
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")  
+![alt text](img/plot_name.png "Plot NAME Results")  
 [**Plot NAME Results**](https://name.ceda.ac.uk/processes/execute?wps=name&process=plot_name) Takes the outputs of another NAME run and then plots the results with user defined parameters.  
 
 #### Inputs
@@ -122,29 +122,30 @@ You must title the run something unique to refer to the job.
 |[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField10)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | -90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Minimum latitude](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField11)| The minimum latitude that makes up the Bounding Box in which the plot will be generated. | Float | 90 | Yes | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 |[Particle concentration scale](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField12)| The scale of the particle concentration can be changed by entering a minimum and maximum value. If left empty each plot will autoscale based on the containing data. | String | None | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
-|[Colour map](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField13)| The colour scheme used can be changed from coolwarm to either viridis or rainbow. Note we do not recommend using rainbow as it is not colour-blind friendly. | String | coolwarm | No | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Colour map](https://name.ceda.ac.uk/processes/execute?wps=name&process=run_name#item-deformField13)| The colour scheme used can be changed from coolwarm to either viridis or rainbow. Note we do not recommend using rainbow as it is not colour-blind friendly. | String | coolwarm | No | ![alt text](img/plot_name_outputs.png "Logo Title Text 1") |
 
 #### Outputs
 
 | Name | Description | Type | Example |
 |------------|-------------------------------------|---------|-------------------------|
-|[Plot file(s)](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| File or files generated from plotting NAME output data. | Files | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+|[Plot file(s)](https://name.ceda.ac.uk/EXAMPLE-OUTPUT)| File or files generated from plotting NAME output data. | Files | ![alt text](img/plot_name_outputs.png "Plot files") |
 
 
 ## Monitoring your jobs
 
 Go to the [Monitor](https://name.ceda.ac.uk/monitor) tab to view the progress of your jobs.  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](img/monitor.png "Monitor tab")  
 Click on the green refresh icon to check the status of the job.  
+![alt text](img/monitor_status.png "Your jobs")  
 Click on Details to see a running log of the job process.  
 Here there is:  
 A *Job Log*: a log of how the job is currently doing.  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](img/monitor_job_log.png "Job log")  
 *Inputs*:  a list of all the inputs you provided.  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](img/monitor_inputs.png "Job inputs")  
 *Outputs*: the ouputs of the job which will vary depending on the process run.  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-*View as XML*: A way to view the WPS XML response of your job. Most users will not use this view. 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
+![alt text](img/monitor_outputs.png "Job outputs")  
+*View as XML*: A way to view the WPS XML response of your job. Most users will not use this view.  
+![alt text](img/monitor_xml.png "Job xml")  
 
 ## Further Information
